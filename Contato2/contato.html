@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Deixe seu recado...</legend>
+            <input type="text" placeholder="Nome Completo" required>
+            <input type="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            <input type="text" placeholder="Empresa/Organização">
+            <input type="tel" placeholder="Telefone">
+            <input list="idMotivo" placeholder="Motivo do contato" required>
+            <datalist id="idMotivo" >
+                <option value="Elogio">Elogio</option>
+                <option value="Problema com Produto">Problema com Produto</option>
+                <option value="Reclamação">Reclamação</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Outro">Outro</option>
+            </datalist>
+            <textarea name="Mensagem" for="idMensagem" cols="30" rows="10" placeholder="Mensagem..." required></textarea>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,3 +1,11 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset{
+    width: 10vw;
+}
+
 input{
     display: block;
     margin: 3px 0px 10px 0px;
