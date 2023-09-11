@@ -1,0 +1,65 @@
+*{
+    font-family: 'Dosis', sans-serif;
+    margin: auto;
+}
+
+/* TAGs específicas */
+
+fieldset{
+    width: 300px
+}
+
+input{
+    margin: 3px 0px 10px 0px;
+}
+
+/* Uso Geral */
+
+.dpBlock{
+    display: block;
+    font-weight: bold;
+}
+
+.inputWidth{
+    width: 280px;
+}
+
+/* Classes específicas */
+
+.necEspec{
+    margin: 3px 0px 10px 0px;
+    display: block;
+    font-weight: bold;
+}
+
+.gender{
+    margin: 3px 0px 10px 0px;
+}
+
+/* Botões */
+
+.submit{
+    background-color: #44c767;
+	border-radius: 28px;
+	border:1px solid #18ab29;
+	color:#ffffff;
+    font-size: 15px;
+	padding: 10px 20px;
+}
+
+.submit:hover{
+    background-color:#5cbf2a;
+}
+
+.clear{
+    background-color: #c74545;
+	border-radius: 28px;
+	border:1px solid #ab1919;
+	color:#ffffff;
+    font-size: 15px;
+	padding: 10px 20px;
+}
+
+.clear:hover{
+    background-color:#bd2a2a;
+}

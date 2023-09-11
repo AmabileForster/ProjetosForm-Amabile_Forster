@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Cadastro de Aluno</legend>
+
+            <div>
+                <label for="Nome" class="dpBlock">Nome</label>
+                <input type="text" name="Nome" class="inputWidth" required>
+            </div>
+            <div>
+                <label for="Sobrenome" class="dpBlock">Sobrenome</label>
+                <input type="text" name="Sobrenome" class="inputWidth" required>
+            </div>
+            <div>
+                <label for="dtNasc" class="dpBlock">Data de Nascimento</label>
+                <input type="date" name="dtNasc" min="2000-01-01" max="2017-12-31" required>
+            </div>
+            <div>
+                <label for="End" class="dpBlock">Endereço</label>
+                <input type="text" name="End" class="inputWidth" required>
+            </div>
+            <div>
+                <label for="Mae" class="dpBlock">Nome da Mãe</label>
+                <input type="text" name="Mae" class="inputWidth" required>
+            </div>
+            <div>
+                <label for="Pai" class="dpBlock">Nome do Pai</label>
+                <input type="text" name="Pai" class="inputWidth">
+            </div>
+            <div>
+                <label for="Email" class="dpBlock">E-mail</label>
+                <input type="email" name="Email" class="inputWidth" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+            <div>
+                <label for="Tel" class="dpBlock">Telefone</label>
+                <input type="tel" name="Tel" required>
+            </div>
+            <div>
+                <label for="serie" class="dpBlock">Série</label>
+                <input type="number" name="serie" min="1" max="9" required>
+            </div>
+            <div>
+                <label for="nmGenero" class="dpBlock gender">Sexo</label>
+                <div>
+                    <input type="radio" name="nmGenero" id="idFeminino" checked>
+                    <label for="idFeminino">Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" name="nmGenero" id="idMasculino">
+                    <label for="idMasculino">Masculino</label>
+                </div>
+            </div>
+            <div>
+                <label for="Necessidades" class="necEspec">Necessidades Especiais</label>
+                <div>
+                    <input type="checkbox" name="Necessidades" id="Auditiva">
+                    <label for="Auditiva">Deficiência Auditiva</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Necessidades" id="Motora">
+                    <label for="Motora">Deficiência Motora</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Necessidades" id="Visual">
+                    <label for="Visual">Deficiência Visual</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Necessidades" id="Paralisia">
+                    <label for="Paralisia">Paralisia Cerebral</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Necessidades" id="PEA">
+                    <label for="PEA">Perturbação do Espectro Autista</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Necessidades" id="Psicológico">
+                    <label for="Psicológico">Perturbação do Foro Psicólogico</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Necessidades" id="Aprendizagem">
+                    <label for="Aprendizagem">Pertubações de Aprendizagem</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="Necessidades" id="Habilidades">
+                    <label for="Habilidades">Altas Habilidades</label>
+                </div>
+            </div>
+            <input type="submit" class="submit">
+            <input type="reset" value="Limpar Tela" class="clear">
+        </fieldset>
+    </form>
+</body>
+</html>
